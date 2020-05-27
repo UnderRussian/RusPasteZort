@@ -1,7 +1,4 @@
-# PasteZort
-Pastejacking - PasteZort
-
-# Uso:
+# Запуск:
 
 ./PasteZort.py
 
