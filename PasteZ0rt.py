@@ -31,7 +31,7 @@ def Windows():
    [2] windows/meterpreter/reverse_http
    [3] windows/meterpreter/reverse_https
    [4] windows/shell/reverse_tcp
-   Payload: """))
+   Номер: """))
 
 		if (payload_seleccionado == 1):
 			payload="windows/meterpreter/reverse_tcp"
@@ -367,11 +367,11 @@ print """ _________________________________________________________________
 |_________________________________________________________________|
 """
 print'\033[1;31m'+"""-------------------------------------------------------------------
- -> Iniciando servidor Apache:
+ -> Привет!:
 -------------------------------------------------------------------"""
 +os.system("service apache2 start")
 
-print """ -> ¡Apache Listo!
+print """ -> Это Русская версия PasteZort!
 -------------------------------------------------------------------"""
 print '\033[0;39m'
 OS_Objetivo=int(raw_input("""   Выбор системы:
@@ -386,5 +386,8 @@ elif (OS_Objetivo == 2):
 	Linux()
 elif (OS_Objetivo == 3):
 	MacOSX()
+elif (OS_Objetivo == 4):
+	print 'You is click this btn...'
+	print '\033[1;31m'+"Ой, что-то не так!"
 else:
-	print '\033[1;31m'+"¡Opcion invalida!"
+	print '\033[1;31m'+"Ой, что-то не так!"
