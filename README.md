@@ -1,4 +1,5 @@
 # Запуск:
+# нужен kali Linux!
 # git clone https://github.com/UnderRussian/RusPasteZort | 
 # cd RusPasteZort/ | 
 # chmod +x PasteZ0rt.py | 
